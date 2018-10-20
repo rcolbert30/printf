@@ -1,0 +1,25 @@
+.TH _PRINTF 1 "20 October 2018" "0.32" "_printf man page"
+.SH NAME
+.B _printf
+- format and print data
+.SH SYNOPSIS
+_printf FORMAT [ARGUMENT]...
+.SH DESCRIPTION
+Print ARGUMENT(s) according to FORMAT.
+
+FORMAT controls the output as in C printf. Interpreted sequences are:
+
+\\n	new line
+
+%b	ARGUMENT as a string with '\\' escapes interpreted, except that octal escapes are of the form \\0 or \\0NNN
+
+and all C format specifications ending with one of diouxXfeEgGcs, with ARGUMENTs are converted to proper type first. Variable widths are handled.
+.SH OPTIONS
+.B holberton
+does not take any options. However, you can supply studentname.
+.SH SEE ALSO
+.I peerlearning(2), projectbased(2), fullstack(2), Betty(1)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Derrick Gee, Rashaad Colbert.
