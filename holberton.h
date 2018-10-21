@@ -13,9 +13,9 @@
 
 typedef struct ops
 {
-	char *op;
+	char *ptr;
 	int (*f)();
-}op_t;
+}operations_t;
 
 int _putchar(char c);
 
@@ -23,6 +23,8 @@ int _char (va_list ch);
 
 int _str (va_list string);
 
+int get_ops(const char *format, operations_t *structs, va_list arg_list);
 
+int _printf(const char *format, ...);
 #endif
 
