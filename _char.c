@@ -4,7 +4,7 @@
  * @ch:
  * Return - printed char 
 */
-int _char (va_list ch);
+int _char(va_list ch)
 {
-	return (_putchar(va_arg(ch,int)));
+	return (_putchar(va_arg(ch, int)));
 }

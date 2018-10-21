@@ -1,25 +1,27 @@
 #include "holberton.h"
 /**
- * _printf - will perform the same operations as printf
+ * _printf - will print based on input (should act exaclty as printf in stdio
  * @format: input
- * Return - the number of characters printed (excluding the null byte)
-*/
+ * Return: correct data type to print to stdout
+ */
 int _printf(const char *format, ...)
+{
+        va_list arg_list; /* argument list that will print data type */
+        int kd;
 
-	va_list arg_list;
-	int kd = 0;
+        operations_t specs[] = { /*array of structs that contain character specifier
+as well as corresponding function that will carry out operation*/
+                {"c", _char},
+                {"s", _str},
+                {NULL, NULL}
+        };
+        if (format == NULL)
+                return (-1);
 
-	op_t ops[] = {
-		{"c", _char};
-		{"s", _str};
-		{NULL, NULL}
-	};
-	if (format == NULL)
-		return;
+        va_start(arg_list, format); /*start argument list and co*/
 
-	va_start (arg_list, format);
+        kd = get_ops(format, specs, arg_list);
 
-	kd = get_op_func(arg_list, format, ops);
-	va_end (arg_list);
-	return (kd);
+        va_end(arg_list);
+        return (kd);
 }
