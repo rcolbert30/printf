@@ -19,9 +19,11 @@ typedef struct ops
 
 int _putchar(char c);
 
-int _char (va_list ch);
+int _char(va_list ch);
 
-int _str (va_list string);
+int _str(va_list string);
+
+int _decimal(va_list dec);
 
 int get_ops(const char *format, operations_t *structs, va_list arg_list);
 
