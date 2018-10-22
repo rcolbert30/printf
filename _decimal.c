@@ -27,5 +27,5 @@ int _decimal(va_list dec)
 		res %= n;
 		n /= 10;
 	}
-	return (0);
+	return (tmp);
 }
