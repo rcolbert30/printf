@@ -14,7 +14,6 @@ int get_ops(const char *format, operations_t *arr, va_list arg_list)
 
 	char string;
 
-<<<<<<< HEAD
         while (string) /*while there is an input */
         {
                 if (string == '%') /* check to see if char inputed is
@@ -48,7 +47,6 @@ until we dinf a match */
                 string = format[a]; /*set variable = to input */
         }
         return (kd);
-=======
 	/* use string to compare inputed character */
 	string = format[a];
 	/* while there is an input */
@@ -80,6 +78,5 @@ until we dinf a match */
 		string = format[a]; /* set variable = to input */
 	}
 	return (kd);
->>>>>>> 48e2948bcc479a1aff01f58cbaa30475cf2ffe70
 }
 
