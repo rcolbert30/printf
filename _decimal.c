@@ -1,9 +1,9 @@
 #include "holberton.h"
-/*
- * _char - prints a character
- * @ch:
- * Return - printed char
-*/
+/**
+ * _decimal - prints a dec/int
+ * @dec: va_list
+ * Return: printed dec
+ */
 int _decimal(va_list dec)
 {
 	int n = 1, tmp;

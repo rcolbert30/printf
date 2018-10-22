@@ -6,16 +6,15 @@
 #include <unistd.h>
 
 /**
- * struct op - selects the correct operation to perform
- * @op: operator
+ * struct ops - selects the correct operation to perform
+ * @ptr: operator
  * @f: pointer to function
  */
-
 typedef struct ops
 {
 	char *ptr;
 	int (*f)();
-}operations_t;
+} operations_t;
 
 int _putchar(char c);
 
