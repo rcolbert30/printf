@@ -39,9 +39,9 @@ until we dinf a match */
                         {
                                 if (!string)
                                         return (-1);
-                                if (string != '%')
+				if (string != '%')
 					kd += _putchar('%');
-                                kd += _putchar(string);
+				kd += _putchar(string);
                         }
                 }
                 else
