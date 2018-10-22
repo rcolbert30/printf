@@ -6,7 +6,7 @@
  */
 int _decimal(va_list dec)
 {
-	int n = 1, tmp;
+	int element = 0, n = 1, tmp;
 	int res;
 
 	tmp = va_arg(dec, int);
@@ -15,17 +15,22 @@ int _decimal(va_list dec)
 	{
 		_putchar('-');
 		res = tmp * -1;
+		element++;
 	}
 	else
 		res = tmp;
+
 	while ((res / n) > 9)
+	{
 		n *= 10;
+	}
 
 	while (n != 0)
 	{
 		_putchar(res / n + '0');
 		res %= n;
 		n /= 10;
+		element++;
 	}
-	return (tmp);
+	return (element);
 }
