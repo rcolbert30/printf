@@ -13,6 +13,9 @@ int _printf(const char *format, ...)
 as well as corresponding function that will carry out operation*/
                 {"c", _char},
                 {"s", _str},
+		{"d", _decimal},
+		{"i", _decimal},
+		{"r", _unknown},
                 {NULL, NULL}
         };
         if (format == NULL)

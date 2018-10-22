@@ -1,4 +1,4 @@
-.TH _PRINTF 1 "20 October 2018" "0.32" "_printf man page"
+.TH _PRINTF 1 "20 October 2018" "0.1" "_printf man page"
 .SH NAME
 .B _printf
 - format and print data
@@ -11,9 +11,14 @@ FORMAT controls the output as in C printf. Interpreted sequences are:
 
 \\n	new line
 
+%%	a single %
+
+%r	unknown
+
 %b	ARGUMENT as a string with '\\' escapes interpreted, except that octal escapes are of the form \\0 or \\0NNN
 
 and all C format specifications ending with one of diouxXfeEgGcs, with ARGUMENTs are converted to proper type first. Variable widths are handled.
+
 .SH OPTIONS
 .B holberton
 does not take any options. However, you can supply studentname.
