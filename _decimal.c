@@ -7,7 +7,7 @@
 int _decimal(va_list dec)
 {
 	int n = 1, tmp;
-	unsigned int res;
+	int res;
 
 	tmp = va_arg(dec, int);
 
@@ -27,5 +27,5 @@ int _decimal(va_list dec)
 		res %= n;
 		n /= 10;
 	}
-	return (0);
+	return (tmp);
 }
