@@ -4,7 +4,7 @@
  * @ch:
  * Return - printed char
 */
-int _unsigned_octal (va_list ch);
+int _unsigned_octal (va_list ch)
 {
         return (_putchar(va_arg(ch,int)));
 }

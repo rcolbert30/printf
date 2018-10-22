@@ -4,7 +4,7 @@
  * @ch:
  * Return - printed char
 */
-int _address (va_list ch);
+int _address (va_list ch)
 {
         return (_putchar(va_arg(ch,int)));
 }
