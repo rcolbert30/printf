@@ -4,7 +4,14 @@
  * @ch:
  * Return - printed char
 */
-int _unknown (va_list ch);
+int _unknown(va_list unk)
 {
-        return (_putchar(va_arg(ch,int)));
+	char *tmp;
+
+	tmp = va_arg(unk, char *);
+
+	tmp += _putchar('%');
+	tmp += _putchar('r');
+
+	return (0);
 }

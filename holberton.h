@@ -25,6 +25,8 @@ int _str(va_list string);
 
 int _decimal(va_list dec);
 
+int _unknown(va_list unk);
+
 int get_ops(const char *format, operations_t *structs, va_list arg_list);
 
 int _printf(const char *format, ...);

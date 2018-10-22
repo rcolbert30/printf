@@ -11,9 +11,14 @@ FORMAT controls the output as in C printf. Interpreted sequences are:
 
 \\n	new line
 
+%%	a single %
+
+%r	unknown
+
 %b	ARGUMENT as a string with '\\' escapes interpreted, except that octal escapes are of the form \\0 or \\0NNN
 
 and all C format specifications ending with one of diouxXfeEgGcs, with ARGUMENTs are converted to proper type first. Variable widths are handled.
+
 .SH OPTIONS
 .B holberton
 does not take any options. However, you can supply studentname.
