@@ -7,7 +7,6 @@
 int _decimal(va_list dec)
 {
 	int element = 0, n = 1, tmp;
-	int n = 1, tmp;
 	int res;
 
 	tmp = va_arg(dec, int);

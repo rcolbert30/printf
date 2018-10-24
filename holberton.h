@@ -28,8 +28,6 @@ int _unknown(va_list unk);
 
 int get_ops(const char *format, operations_t *structs, va_list arg_list);
 
-int _binary(va_list binary);
-
 int _printf(const char *format, ...);
 #endif
 
