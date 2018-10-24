@@ -19,6 +19,7 @@ int _printf(const char *format, ...)
 		{"d", _decimal},
 		{"i", _decimal},
 		{"r", _unknown},
+		{"b", _binary},
 		{NULL, NULL}
 	};
 	if (format == NULL)
