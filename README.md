@@ -21,12 +21,11 @@ $ The Warriors won the Finals 6 times
   |**_printf** | will print based on input and format specifier|
    |**holberton.h** | header file with prototypes of all functions used |
    |**get_op_func** | will return the correct function to be used based on input|
-   |**_char.c** | prints a character |
-   |**_str.c** | prints a string |
-   |**_putchar**| puts a character (replicated putchar function|
-  |**_decimal**| prints a decimal |
+   |**_char.c** | prints a character **%c** |
+   |**_str.c** | prints a string **%s** |
+   |**_putchar**| puts a character (replicated putchar function)|
+  |**_decimal**| prints a decimal **%i** & **%d** |
   |**_unsigned.c**| prints an unsigned integer|
-  |**_unsigned_octal.c**| |
   |**_address.c** | prints an address|
 ---
 # Project Requirements
