@@ -1,11 +1,11 @@
 .TH _PRINTF 1 "20 October 2018" "0.1" "_printf man page"
 .SH NAME
 .B _printf
-- format and print data
+- returns the number of characters printed and writes the output to stdout (for all coresponding data types).
 .SH SYNOPSIS
 _printf FORMAT [ARGUMENT]...
 .SH DESCRIPTION
-Print ARGUMENT(s) according to FORMAT.
+Print ARGUMENT(s) according to FORMAT. An exact replica of the standard printf() function. 
 
 FORMAT controls the output as in C printf. Interpreted sequences are:
 
